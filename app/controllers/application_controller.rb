@@ -9,7 +9,7 @@ class ApplicationController < ActionController::Base
     if params[:name] && params[:name] != []
       session[:name] = params[:name]
     else
-      session[:name] = nil
+      session[:name] ||= nil
     end
   end
 end
