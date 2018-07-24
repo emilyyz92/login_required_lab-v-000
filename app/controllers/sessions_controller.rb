@@ -6,7 +6,6 @@ class SessionsController < ApplicationController
   def create
     current_user
   end
-  end
 
   def destroy
     if session[:name]
