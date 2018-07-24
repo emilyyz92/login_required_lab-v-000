@@ -4,7 +4,7 @@ class SessionsController < ApplicationController
   end
 
   def create
-    if current_user
+    if current_user && current_user != ''
       redirect_to secrets_path
     else
       redirect_to '/'
