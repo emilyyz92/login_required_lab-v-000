@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   get 'secrets/show'
 
   get '/', to: 'sessions#new'
+  get '/login', to: 'sessions#create'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
