@@ -1,6 +1,6 @@
 class SecretsController < ApplicationController
   def show
-    if !session[:name] || session[:name] == []
+    if !current_user
       redirect_to '/login'
     end
   end
