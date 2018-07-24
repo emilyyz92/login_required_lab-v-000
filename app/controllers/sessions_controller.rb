@@ -5,6 +5,7 @@ class SessionsController < ApplicationController
 
   def create
     current_user
+    redirect_to secrets_path
   end
 
   def destroy
