@@ -8,5 +8,6 @@ class SessionsController < ApplicationController
       redirect_to '/'
     else
       session[:name] = params[:name]
+    end
   end
 end
